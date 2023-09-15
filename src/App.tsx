@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Box from "./components/Box.styled";
 import BtnComp from "./components/Button.styled";
 import GitHubAcc from "./components/Link.styled";
 import GitHubProject from "./components/GitHubProject.styled";
 import CreateReactApp from "./components/CreateReactApp.styled";
+import styled from "styled-components";
 
 function App() {
     return (
@@ -20,3 +20,11 @@ function App() {
 }
 
 export default App;
+
+const Box = styled.div `
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  gap: 35px;
+`
