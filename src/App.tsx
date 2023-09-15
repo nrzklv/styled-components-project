@@ -9,12 +9,14 @@ import styled from "styled-components";
 function App() {
     return (
         <div className="App">
+
             <Box>
                 <BtnComp as="a" href={"#"}>Hello World</BtnComp>
                 <GitHubAcc href={"https://github.com/nrzklv"} target={"_blank"}>GitHub Account</GitHubAcc>
                 <GitHubProject href={"https://github.com/nrzklv/IT-Kamasutra.git"} target={"_blank"}>GitHub Project</GitHubProject>
                 <CreateReactApp href={"https://create-react-app.dev/docs/adding-typescript/"} target={"_blank"}>Create React App</CreateReactApp>
             </Box>
+
         </div>
     );
 }
