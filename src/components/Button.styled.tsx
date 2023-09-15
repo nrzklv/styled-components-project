@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Animations from "../styles/animations/Animations";
 
 const BtnComp = styled.h1 `
   color: darkorange;
@@ -11,6 +12,7 @@ const BtnComp = styled.h1 `
   &:hover {
     color: black;
     background-color: darkorange;
+    animation: ${Animations} 2s ease infinite;
   }
 `
 

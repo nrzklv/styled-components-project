@@ -29,7 +29,7 @@ const Box = styled.div `
   justify-content: space-between;
   font-size: 20px;
   gap: 35px;
-  
+
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
