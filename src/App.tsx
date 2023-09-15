@@ -1,34 +1,22 @@
 import React from 'react';
 import './App.css';
-import styled from 'styled-components';
+import Box from "./components/Box.styled";
+import BtnComp from "./components/Button.styled";
+import GitHubAcc from "./components/Link.styled";
+import GitHubProject from "./components/GitHubProject.styled";
+import CreateReactApp from "./components/CreateReactApp.styled";
 
 function App() {
-  return (
-    <div className="App">
-        <Box>
-            <StyledBtn>
-                Hello World
-            </StyledBtn>
-        </Box>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Box>
+                <BtnComp as="a" href={"#"}>Hello World</BtnComp>
+                <GitHubAcc href={"https://github.com/nrzklv"} target={"_blank"}>GitHub Account</GitHubAcc>
+                <GitHubProject href={"https://github.com/nrzklv/IT-Kamasutra.git"} target={"_blank"}>GitHub Project</GitHubProject>
+                <CreateReactApp href={"https://create-react-app.dev/docs/adding-typescript/"} target={"_blank"}>Create React App</CreateReactApp>
+            </Box>
+        </div>
+    );
 }
 
 export default App;
-
-const StyledBtn = styled.button `
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px 20px;
-  background-color: darkcyan;
-  font-size: 3rem;
-  font-weight: bold;
-`
-
-const Box = styled.div `
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-`
-
