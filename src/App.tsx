@@ -13,8 +13,10 @@ function App() {
             <Box>
                 <BtnComp color="red">Hello World</BtnComp>
                 <input type="text"/>
+                <input type="password"/>
+                <input type="email"/>
+                <input type="file"/>
                 <input type="submit"/>
-                <input type="radio"/>
             </Box>
 
         </div>
