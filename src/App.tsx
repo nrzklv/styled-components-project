@@ -32,7 +32,7 @@ const Box = styled.div`
   height: 100vh;
   gap: 35px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
