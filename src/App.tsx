@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import BtnComp from "./components/Button.styled";
-import GitHubAcc from "./components/Link.styled";
-import GitHubProject from "./components/GitHubProject.styled";
-import CreateReactApp from "./components/CreateReactApp.styled";
+// import GitHubAcc from "./components/Link.styled";
+// import GitHubProject from "./components/GitHubProject.styled";
+// import CreateReactApp from "./components/CreateReactApp.styled";
 import styled from "styled-components";
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
         <div className="App">
 
             <Box>
-                <BtnComp as="a" href={"#"}>Hello World</BtnComp>
-                <GitHubAcc href={"https://github.com/nrzklv"} target={"_blank"}>GitHub Account</GitHubAcc>
-                <GitHubProject href={"https://github.com/nrzklv/IT-Kamasutra.git"} target={"_blank"}>GitHub Project</GitHubProject>
-                <CreateReactApp href={"https://create-react-app.dev/docs/adding-typescript/"} target={"_blank"}>Create React App</CreateReactApp>
+                <BtnComp color="red">Hello World</BtnComp>
+                <input type="text"/>
+                <input type="submit"/>
+                <input type="radio"/>
             </Box>
 
         </div>
@@ -23,11 +23,13 @@ function App() {
 
 export default App;
 
-const Box = styled.div `
+const Box = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   font-size: 20px;
+  height: 100vh;
   gap: 35px;
 
   @media screen and (max-width: 800px) {
