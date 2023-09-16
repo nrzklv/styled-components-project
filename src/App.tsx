@@ -16,6 +16,7 @@ function App() {
                 <input type="password"/>
                 <input type="email"/>
                 <input type="file"/>
+                <input type="reset"/>
                 <input type="submit"/>
             </Box>
 
