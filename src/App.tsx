@@ -11,6 +11,8 @@ function App() {
         <div className="App">
 
             <Box>
+                <BtnComp color={"red"} fontSize={"3rem"}>Hello World</BtnComp>
+                <BtnComp color={"black"}>Hello World</BtnComp>
                 <BtnComp>Hello World</BtnComp>
                 <input type="text"/>
                 <input type="password"/>
