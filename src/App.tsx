@@ -11,14 +11,13 @@ function App() {
         <div className="App">
 
             <Box>
-                <BtnComp color={"red"} fontSize={"3rem"}>Hello World</BtnComp>
-                <BtnComp color={"black"}>Hello World</BtnComp>
-                <BtnComp>Hello World</BtnComp>
-                <input type="text"/>
-                <input type="password"/>
-                <input type="email"/>
-                <input type="reset"/>
-                <input type="submit"/>
+                {/*<BtnComp color={"red"} fontSize={"3rem"}>Hello World</BtnComp>*/}
+                {/*<BtnComp color={"black"}>Hello World</BtnComp>*/}
+                {/*<BtnComp>Hello World</BtnComp>*/}
+
+                <BtnComp btnType={"primary"} basic>Hello World</BtnComp>
+                <BtnComp btnType={"secondary"} premium>Hello World</BtnComp>
+
             </Box>
 
         </div>
