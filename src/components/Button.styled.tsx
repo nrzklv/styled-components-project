@@ -1,17 +1,20 @@
 import styled from "styled-components";
 // import Animations from "../styles/animations/Animations";
 
-const BtnComp = styled.h1 `
-  display: inline-block;
+type BtnCompPropsType = {
+    color?: string
+    fontSize?: string
+}
+
+const BtnComp = styled.h1 <BtnCompPropsType> `
   padding: 15px 25px;
-  font-size: 24px;
+  //font-size: 2rem;
+  font-size: ${props => props.fontSize || "2rem"};
   cursor: pointer;
-  text-align: center;
   text-decoration: none;
-  outline: none;
   color: #fff;
-  background-color: #008b8b;
-  border: none;
+  //background-color: #008b8b;
+  background-color: ${props => props.color || "#008b8b"};
   border-radius: 15px;
   box-shadow: 0 9px #999;
   user-select: none;
